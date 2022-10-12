@@ -2,10 +2,10 @@
 
 This is a web app originally based on John Elder's Ruby on Rails course.
 
-##Summary
-This project is intended to create a miniature collection app based on GWs MESBG range: https://www.games-workshop.com/en-NZ/Middle-earth
+## Summary
+This project is intended to create a miniature collection app based on [GWs MESBG range](https://www.games-workshop.com/en-NZ/Middle-earth)
 
-##Features
+## Features
 The features to implement are:
   1. Complete Catalogue of MESBG miniatures
   2. Tags that correspond to miniature's Character, Faction and Original Release Wave.
