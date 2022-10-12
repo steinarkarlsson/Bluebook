@@ -29,7 +29,7 @@ before_action :correct_user, only: [:edit, :update, :destroy]
     
     respond_to do |format|
       if @friend.save
-        format.html { redirect_to friend_url(@friend), notice: "Friend was successfully created." }
+        format.html { redirect_to friend_url(@friend), notice: "Miniature was successfully created." }
         format.json { render :show, status: :created, location: @friend }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -42,7 +42,7 @@ before_action :correct_user, only: [:edit, :update, :destroy]
   def update
     respond_to do |format|
       if @friend.update(friend_params)
-        format.html { redirect_to friend_url(@friend), notice: "Friend was successfully updated." }
+        format.html { redirect_to friend_url(@friend), notice: "Miniature was successfully updated." }
         format.json { render :show, status: :ok, location: @friend }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -56,14 +56,14 @@ before_action :correct_user, only: [:edit, :update, :destroy]
     @friend.destroy
 
     respond_to do |format|
-      format.html { redirect_to friends_url, notice: "Friend was successfully destroyed." }
+      format.html { redirect_to friends_url, notice: "Miniature was successfully destroyed." }
       format.json { head :no_content }
     end
   end
 
   def correct_user
     @friend = current_user.friends.find_by(id: params[:id])
-    redirect_to friends_path, notice: "Not Authorised to Edit This Friend" if @friend.nil?  
+    redirect_to friends_path, notice: "Not Authorised to Edit This Miniature" if @friend.nil?  
   end
 
 
